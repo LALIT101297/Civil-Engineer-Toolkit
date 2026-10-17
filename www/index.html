@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b1424"><title>Civil Engineer Toolkit</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><div class="logo">CE</div><div><b>Civil Engineer Toolkit</b><small>FIELD CALCULATORS · OFFLINE</small></div></div>
+  <button id="themeBtn" class="iconbtn" aria-label="Toggle theme">☼</button>
+</header>
+<main>
+<section class="hero"><div><span class="eyebrow">YOUR SITE COMPANION</span><h1>Work smarter.<br><em>Build accurately.</em></h1><p>Quick engineering calculations and site records, right in your pocket.</p></div><div class="hero-mark">⌁</div></section>
+<div class="section-head"><div><span class="eyebrow">TOOLBOX</span><h2>Choose a calculator</h2></div><span class="pill">13 TOOLS</span></div>
+<div class="tools" id="tools">
+<button class="tool active" data-tool="concrete"><span class="tool-icon blue">▦</span><b>Concrete</b><small>Volume & mix estimate</small></button>
+<button class="tool" data-tool="steel"><span class="tool-icon orange">⌁</span><b>Steel</b><small>Bar weight & quantity</small></button>
+<button class="tool" data-tool="brick"><span class="tool-icon amber">▤</span><b>Brickwork</b><small>Brick & mortar estimate</small></button>
+<button class="tool" data-tool="plaster"><span class="tool-icon green">▥</span><b>Plaster</b><small>Area & material estimate</small></button>
+<button class="tool" data-tool="level"><span class="tool-icon purple">⌖</span><b>Levelling</b><small>HI / RL calculator</small></button>
+<button class="tool" data-tool="units"><span class="tool-icon cyan">⇄</span><b>Unit converter</b><small>Common site units</small></button>
+<button class="tool" data-tool="notes"><span class="tool-icon pink">☷</span><b>QA/QC notes</b><small>Save site observations</small></button>
+<button class="tool" data-tool="guide"><span class="tool-icon slate">i</span><b>Quick guide</b><small>Assumptions & safety</small></button>
+<button class="tool" data-tool="m30"><span class="tool-icon blue">M30</span><b>M30 mix</b><small>Approved mix quantity scaler</small></button>
+<button class="tool" data-tool="bbs"><span class="tool-icon orange">⌁</span><b>BBS / Cutting</b><small>Bar length & weight</small></button>
+<button class="tool" data-tool="boq"><span class="tool-icon green">₹</span><b>BOQ / Rate analysis</b><small>Item-wise cost build-up</small></button>
+<button class="tool" data-tool="report"><span class="tool-icon pink">▧</span><b>Site report</b><small>Print / save as PDF</small></button><button class="tool" data-tool="dpr"><span class="tool-icon pink">▧</span><b>Daily Progress Report</b><small>Manpower, work, QA/QC & site diary</small></button>
+</div>
+<section class="workspace">
+<div class="workspace-title"><div><span class="eyebrow">CALCULATOR</span><h2 id="toolTitle">Concrete estimator</h2></div><span class="live-dot">● OFFLINE READY</span></div>
+<div id="panel"></div>
+</section>
+<footer>Made for practical site work <span>v1.0 · Calculations are estimates</span></footer>
+</main>
+<script src="app.js"></script><script>if("serviceWorker" in navigator)navigator.serviceWorker.register("./sw.js").catch(()=>{});</script>
+</body></html>
